@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #ffeeee;
+    position: relative;
+}
+#profile_pic{
+    width: 34%;
+    position: absolute;
+    top: 30%;
+    right: 42%;
+    cursor: pointer;
+    transform: translate(70%, -58%) perspective(1200px) rotateX(60deg) skew(30deg, -30deg);
+    transition: 0.7s;
+}
+#profile_pic img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.7s;
+}
+#profile {
+    width: 450px;
+    color: #245;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    transition: 0.7s;
+}
+#close{
+    width: 2%;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#profile h1{
+    font-size: 50px;
+}
+#profile h2{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 100;
+    margin: 20px 0 40px;
+}
+button{
+    padding: 18px 36px;
+    border: 2px solid #245;
+    outline: none;
+    background: transparent;
+    color: #245;
+    font-weight: bold;
+    cursor: pointer;
+}
+#profile_pic .shodow1 {
+    opacity: 0.5;
+    filter: blur(5px);
+}
+#profile_pic .shodow2 {
+    opacity: 0.2;
+    filter: blur(2px);
+}
+.employee{
+    z-index: 10;
+}
+#profile_pic:hover .shodow1 {
+    top: 30px;
+    right: 30px;
+}
+#profile_pic:hover .shodow2 {
+    top: 60px;
+    right: 60px;
+}
+.preview{
+    width: 60% !important;
+    transform: translateX(-50%) rotateX(0deg) 
+    skew(0deg,0deg) !important;
+    position: absolute !important;
+    top: 10% !important;
+    left: 50% !important;
+}
+
+.preview:hover .shadow1, .preview:hover .shadow2 {
+    top: 0 !important;
+    right: 0 !important;
+}
+
+#close{
+    width: 40px;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#close:hover{
+    transform: rotate(360deg);
+}

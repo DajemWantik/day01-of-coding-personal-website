@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How To Make Personal Website Header Using HTML, CSS & JS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div id="profile">
+                <h1>Mr.Kamprett</h1>
+                <h2>Saya seorang developer yang melanjutkan <br> di USTJ Fakultas fikom.</h2>
+                <button type="button">DOWNLOAD CV</button>
+            </div>
+
+            <div id="profile_pic">
+                <img src="images/cukimai.jpg" alt class="employee">
+                <img src="images/cukimai.jpg" alt class="shodow1">
+                <img src="images/cukimai.jpg" alt class="shodow2">
+            </div>
+            <img src="images/Close.jpg" alt id="close">
+
+        </div>
+
+        <script>
+
+            var show = document.getElementById('profile');
+            var show = document.getElementById('profile_pic');
+            var hidden = document.getElementById('close');
+
+            
+            show.onclick = function(){
+                profile.style.left = "-80%";
+                show.classList.add('preview');
+                hidden.style.display = "block";
+            }
+            hidden.onclick = function(){
+                profile.style.left = "10%";
+                show.classList.remove('preview');
+                hidden.style.display = "none";
+            }
+        </script>
+
+    </body>
+</html>
